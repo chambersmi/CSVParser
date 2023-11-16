@@ -3,6 +3,7 @@ using CsvHelper.Configuration.Attributes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,18 +12,18 @@ namespace CSVParser.Models
 {
     public class StarModel
     {
+        [Key]
         public int Id { get; set; }
-        public float? RightAscension { get; set; }
-        public float? Declination { get; set; }
-        public float? DistanceFromSolInParsecs { get; set; }
-        public float? ProperMotionRightAscension { get; set; }
-        public float? ProperMotionDeclination { get; set; }
-        public float? RadialVelocityKmPerSecond { get; set; }
-        public float? V_Magnitude { get; set; }
-        public float? AbsoluteMagnitude { get; set; }
-        public string? MKSpectralType { get; set; }
-        public float? ColorIndex { get; set; }
-        public float? Luminosity { get; set; }
+        public double RightAscension { get; set; }
+        public double Declination { get; set; }
+        public double DistanceFromSolInParsecs { get; set; }
+        public double ProperMotionRightAscension { get; set; }
+        public double ProperMotionDeclination { get; set; }
+        public double RadialVelocityKmPerSecond { get; set; }
+        public double V_Magnitude { get; set; }
+        public double AbsoluteMagnitude { get; set; }
+        public string MKSpectralType { get; set; }
+        public string ColorIndex { get; set; }
+        public double Luminosity { get; set; }
     }
-
 }

@@ -11,18 +11,18 @@ namespace CSVParser.Models
     {
         public StarModelMapper()
         {
-            Map(m => m.Id).Name("id").Default(0);
-            Map(m => m.RightAscension).Name("ra").Default(0);
-            Map(m => m.Declination).Name("dec").Default(0);
-            Map(m => m.DistanceFromSolInParsecs).Name("dist").Default(0);
-            Map(m => m.ProperMotionRightAscension).Name("pmra").Default(0);
-            Map(m => m.ProperMotionDeclination).Name("pmdec").Default(0);
-            Map(m => m.RadialVelocityKmPerSecond).Name("rv").Default(0);
-            Map(m => m.V_Magnitude).Name("mag").Default(0);
-            Map(m => m.AbsoluteMagnitude).Name("absmag").Default(0);
+            //Map(m => m.Id).Name("id");
+            Map(m => m.RightAscension).Name("ra");
+            Map(m => m.Declination).Name("dec");
+            Map(m => m.DistanceFromSolInParsecs).Name("dist");
+            Map(m => m.ProperMotionRightAscension).Name("pmra");
+            Map(m => m.ProperMotionDeclination).Name("pmdec");
+            Map(m => m.RadialVelocityKmPerSecond).Name("rv");
+            Map(m => m.V_Magnitude).Name("mag");
+            Map(m => m.AbsoluteMagnitude).Name("absmag");
             Map(m => m.MKSpectralType).Name("spect").Default("");
-            Map(m => m.ColorIndex).Name("ci").Default(0);
-            Map(m => m.Luminosity).Name("lum").Default(0);
+            Map(m => m.ColorIndex).Name("ci");
+            Map(m => m.Luminosity).Name("lum");
         }
     }
 }
